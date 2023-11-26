@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: #FF7979;
+    padding: 28px 24px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerText{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.headline{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.292px;
+}
+
+.bigText{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.price {
+    height: 88px;
+    border-radius: 10px;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.268px;
+    padding: 18px 66px;
+    margin-bottom: 24px;
+}
+
+
+.price .monthly{
+    font-weight: 400;
+}
+
+.registrationContainer{
+    display: flex;
+    background: #FFF;
+    flex-direction: column;  
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+}
+
+.regForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 19px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    margin-top: 16px;
+}
+
+.error{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.errorMessage{
+    color: #FF7979;
+    text-align: right;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 2px;
+    display: none;
+}
+
+.success{
+    color: green;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 2px;
+    display: none;  
+}
+
+.name,
+.emailField{
+    border-radius: 5px;
+    border: none;
+    height: 56px;
+    padding-left: 19.41px;
+
+    color: #3D3B48;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    opacity: 0.75;
+}
+
+
+.claimTrial{
+    height: 56px;
+    border-radius: 5px;
+    background: #38CC8B;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    border: none;
+    margin-top: 16px;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.term{
+    color: #BAB7D4;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    margin-top: 8px;
+}
+
+.services{
+    color: #FF7979;
+    font-weight: 700;
+}
+
+
+/* desktop screen width */
+@media (min-width:1440px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        padding: 0px;
+    }
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .headerText{
+        gap: 11px;
+        margin-bottom: 0px;
+    }
+    
+    .headline{
+        width: 525px;
+        height: 131px;
+
+        text-align: left;
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.521px;
+    }
+    
+    .bigText{
+        width: 525px;
+        text-align: left;
+    }
+
+    .registrationBigContainer{
+        margin-left: 45px;
+    }
+    
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 540px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    
+    .registrationContainer{
+        width: 540px;
+        min-height: 474px; 
+        height: fit-content;
+        padding: 40px;
+        padding-top: 20px;
+    }
+    
+    .regForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputField{
+        padding-right: 27px;
+        margin-top: 20px;
+    }
+    
+    .name,
+    .emailField{
+        width: 460px;
+        padding-left: 32px;
+    }
+    
+    
+    .claimTrial{
+        width: 460px;
+        margin-top: 20px;
+    }
+
+    .claimTrial:hover{
+        cursor: pointer;
+        background: #77E2B3;
+        box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    }
+    
+}

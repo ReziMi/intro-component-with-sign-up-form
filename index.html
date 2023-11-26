@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Intro Component with Sign Up Form</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="headerText">
+            <h1 class="headline">Learn to code by watching others</h1>
+            <p class="bigText">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+        </div>
+        <div class="registrationBigContainer">
+            <div class="price">
+                <p>Try it free 7 days <span class="monthly"> then $20/mo. thereafter</span></p>
+            </div>
+    
+            <div class="registrationContainer">
+                <div class="regForm">
+                    <div class="inputField">
+                        <input id="firstError" class="name" type="text" placeholder="First Name">
+                        <img class="error" src="./images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="errorMessage">First Name cannot be empty</p>
+
+                    <div class="inputField">
+                        <input id="lastError" class="name" type="text" placeholder="Last Name">
+                        <img class="error" src="./images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="errorMessage">Last Name cannot be empty</p>
+
+                    <div class="inputField">
+                        <input id="emailError" class="emailField" type="text" placeholder="Email Address">
+                        <img class="error" src="./images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="errorMessage">Looks like this is not an email</p>
+                    <p class="errorMessage">Email cannot be empty</p>
+
+                    <div class="inputField">
+                        <input id="passwordError" class="name" type="password" placeholder="Password">
+                        <img class="error" src="./images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="errorMessage">Password cannot be empty</p> 
+                    <p class="errorMessage">A password must be between 7-16 characters that starts with a letter(Only letters, numbers & underscore)</p>             
+                </div>
+    
+                <button class="claimTrial">CLAIM YOUR FREE TRIAL</button>
+                <p class="success">Success! Please check your email</p>
+                <p class="term">By clicking the button, you are agreeing to our <span class="services">Terms and Services</span></p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
